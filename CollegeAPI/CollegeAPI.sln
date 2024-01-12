@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollegeAPI", "CollegeAPI.csproj", "{FFCE78BB-F074-4C34-9CB1-04842C249060}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E145C597-BE7A-4477-9306-ED86B223AE47} = {E145C597-BE7A-4477-9306-ED86B223AE47}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "studentrepository", "..\studentrepository\studentrepository.csproj", "{E145C597-BE7A-4477-9306-ED86B223AE47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFCE78BB-F074-4C34-9CB1-04842C249060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFCE78BB-F074-4C34-9CB1-04842C249060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFCE78BB-F074-4C34-9CB1-04842C249060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFCE78BB-F074-4C34-9CB1-04842C249060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E145C597-BE7A-4477-9306-ED86B223AE47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E145C597-BE7A-4477-9306-ED86B223AE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E145C597-BE7A-4477-9306-ED86B223AE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E145C597-BE7A-4477-9306-ED86B223AE47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DF3E525-2975-4E45-87A5-F9ACBBA9520C}
+	EndGlobalSection
+EndGlobal
