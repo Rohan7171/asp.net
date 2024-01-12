@@ -17,7 +17,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<StudentService, StudentService>();
 var isTrue = bool.Parse(builder.Configuration["UseHardcodedData"]);
-
+//git
 if (isTrue)
 {
     builder.Services.AddSingleton<List<Student>>(MyStaticData.Students);
