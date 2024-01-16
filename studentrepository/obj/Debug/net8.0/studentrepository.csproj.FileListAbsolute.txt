@@ -10,3 +10,16 @@ D:\Sanket_Task\studentrepository\obj\Debug\net8.0\studentrepository.dll
 D:\Sanket_Task\studentrepository\obj\Debug\net8.0\refint\studentrepository.dll
 D:\Sanket_Task\studentrepository\obj\Debug\net8.0\studentrepository.pdb
 D:\Sanket_Task\studentrepository\obj\Debug\net8.0\ref\studentrepository.dll
+C:\Gitrepo\studentrepository\bin\Debug\net8.0\studentrepository.deps.json
+C:\Gitrepo\studentrepository\bin\Debug\net8.0\studentrepository.dll
+C:\Gitrepo\studentrepository\bin\Debug\net8.0\studentrepository.pdb
+C:\Gitrepo\studentrepository\obj\Debug\net8.0\studentrepository.csproj.AssemblyReference.cache
+C:\Gitrepo\studentrepository\obj\Debug\net8.0\studentrepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Gitrepo\studentrepository\obj\Debug\net8.0\studentrepository.AssemblyInfoInputs.cache
+C:\Gitrepo\studentrepository\obj\Debug\net8.0\studentrepository.AssemblyInfo.cs
+C:\Gitrepo\studentrepository\obj\Debug\net8.0\studentrepository.csproj.CoreCompileInputs.cache
+C:\Gitrepo\studentrepository\obj\Debug\net8.0\studentrepository.sourcelink.json
+C:\Gitrepo\studentrepository\obj\Debug\net8.0\studentrepository.dll
+C:\Gitrepo\studentrepository\obj\Debug\net8.0\refint\studentrepository.dll
+C:\Gitrepo\studentrepository\obj\Debug\net8.0\studentrepository.pdb
+C:\Gitrepo\studentrepository\obj\Debug\net8.0\ref\studentrepository.dll

@@ -1,7 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Xml.Serialization;
 
 namespace studentrepository.DTO
 {
+    [XmlRoot("Student")]
+
     public class Student
     {
         [Key]
@@ -16,3 +19,4 @@ namespace studentrepository.DTO
 
     }
 }
+

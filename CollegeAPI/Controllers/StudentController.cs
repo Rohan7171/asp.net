@@ -1,7 +1,8 @@
 ﻿using studentrepository.DTO;
 using studentrepository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
- 
+using System.Xml.Serialization; // For XML serialization
+
 
 
 namespace CollegeAPI.Controllers
@@ -18,7 +19,7 @@ namespace CollegeAPI.Controllers
             _studentrepo = studentrepo;
             _studentService = studentService;
         }
-
+        //uploaded to git
         [HttpGet]
         public IActionResult Index()
         {
@@ -92,24 +93,24 @@ namespace CollegeAPI.Controllers
             }
         }
 
-
-        
-        [HttpPost("get.{format})"), FormatFilter]
-        public Student post([FromBody] Student student)
+        [HttpPost("xml/json")]
+        [Consumes("application/xml", "application/json")]
+        [Produces("application/xml", "application/json")]
+        public IActionResult PostWithXmlOrJson([FromBody] Student student)
         {
-            if(ModelState.IsValid)
+            try
             {
-                return student;
-            }
-            else
+                // Perform data processing (e.g., store in database)
+                _studentrepo.CreateStudent(student);
+
+                // Determine response format based on Accept header
+                    return Ok(student);
+                            }
+            catch (Exception ex)
             {
-                return null;
+                // Handle errors gracefully
+                return StatusCode(500, "Error processing request: " + ex.Message);
             }
-           
-                
         }
-
-
-
     }
-}
+    }

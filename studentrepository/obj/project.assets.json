@@ -663,11 +663,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sanket_Task\\studentrepository\\studentrepository.csproj",
+      "projectUniqueName": "C:\\Gitrepo\\studentrepository\\studentrepository.csproj",
       "projectName": "studentrepository",
-      "projectPath": "D:\\Sanket_Task\\studentrepository\\studentrepository.csproj",
+      "projectPath": "C:\\Gitrepo\\studentrepository\\studentrepository.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Sanket_Task\\studentrepository\\obj\\",
+      "outputPath": "C:\\Gitrepo\\studentrepository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

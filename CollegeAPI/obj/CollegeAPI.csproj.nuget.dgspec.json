@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sanket_Task\\CollegeAPI\\CollegeAPI.csproj": {}
+    "C:\\Gitrepo\\CollegeAPI\\CollegeAPI.csproj": {}
   },
   "projects": {
-    "D:\\Sanket_Task\\CollegeAPI\\CollegeAPI.csproj": {
+    "C:\\Gitrepo\\CollegeAPI\\CollegeAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sanket_Task\\CollegeAPI\\CollegeAPI.csproj",
+        "projectUniqueName": "C:\\Gitrepo\\CollegeAPI\\CollegeAPI.csproj",
         "projectName": "CollegeAPI",
-        "projectPath": "D:\\Sanket_Task\\CollegeAPI\\CollegeAPI.csproj",
+        "projectPath": "C:\\Gitrepo\\CollegeAPI\\CollegeAPI.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Sanket_Task\\CollegeAPI\\obj\\",
+        "outputPath": "C:\\Gitrepo\\CollegeAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Sanket_Task\\studentrepository\\studentrepository.csproj": {
-                "projectPath": "D:\\Sanket_Task\\studentrepository\\studentrepository.csproj"
+              "C:\\Gitrepo\\studentrepository\\studentrepository.csproj": {
+                "projectPath": "C:\\Gitrepo\\studentrepository\\studentrepository.csproj"
               }
             }
           }
@@ -72,7 +72,15 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.Runtime.Serialization.Xml": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
@@ -98,14 +106,14 @@
         }
       }
     },
-    "D:\\Sanket_Task\\studentrepository\\studentrepository.csproj": {
+    "C:\\Gitrepo\\studentrepository\\studentrepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sanket_Task\\studentrepository\\studentrepository.csproj",
+        "projectUniqueName": "C:\\Gitrepo\\studentrepository\\studentrepository.csproj",
         "projectName": "studentrepository",
-        "projectPath": "D:\\Sanket_Task\\studentrepository\\studentrepository.csproj",
+        "projectPath": "C:\\Gitrepo\\studentrepository\\studentrepository.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Sanket_Task\\studentrepository\\obj\\",
+        "outputPath": "C:\\Gitrepo\\studentrepository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
