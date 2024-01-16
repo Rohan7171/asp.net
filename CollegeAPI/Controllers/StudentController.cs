@@ -19,6 +19,8 @@ namespace CollegeAPI.Controllers
             _studentrepo = studentrepo;
             _studentService = studentService;
         }
+
+
         //uploaded to git
         [HttpGet]
         public IActionResult Index()
