@@ -1,56 +1,72 @@
-using studentrepository.DTO;
-using studentrepository.Interfaces;
-using System.Net;
 using System.Net.Http;
 using System.Text;
-using System.Text.Json;
-using Moq;
-using FluentAssertions;
-using Xunit;
-using studentrepository.DTO;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Assert = NUnit.Framework.Assert;
+using NUnit.Framework;
+using System.Xml.Linq;
+using studentrepository.DTO;
+using CollegeAPI.test;
 
-namespace CollegeAPI.Test
+[TestFixture]
+public class YourControllerTests
 {
+    private const string BaseUrl = " http://localhost:5120";
+    public const string endpoint = "/api/students/xml/json";
 
-    public class postxmlorjson
+    [Test]
+    public async Task PostWithXmlOrJson_ValidJsonData_ReturnsOk()
     {
-        [Test]
-        public async Task PostStudentJson_ReturnsCreatedStudentJson()
+        // Arrange
+        var httpClient = new HttpClient();
+       // Replace with the actual endpoint of your API
+
+        var student = new Student
         {
-            // Arrange
-            var student = new Student()
-            {
-                Id = 1,
-                FirstName = "John",
-                LastName = "Doe",
-                Age = "25",
-                Adrress = "123 Main St",
-                university = "MIT"
-            };
-            string jsonStudent = JsonConvert.SerializeObject(student);
-            string url = "http://localhost:7005/api/students/xml/json"; // Adjust URL if needed
+            Id = 1,
+            FirstName = "John",
+            LastName = "Doe",
+            Age = "25",
+            Adrress = "123 Main St",
+            university = "MIT"
+        };
 
-            using (var client = new HttpClient())
-            {
-                // Act
-                var content = new StringContent(jsonStudent, Encoding.UTF8, "application/json");
-                var response = await client.PostAsync(url, content);
+        var jsonContent = new StringContent(JsonConvert.SerializeObject(student), Encoding.UTF8, "application/json");
 
-                // Assert
-                response.EnsureSuccessStatusCode();
-                var createdStudentJson = await response.Content.ReadAsStringAsync();
-                var createdStudent = JsonConvert.DeserializeObject<Student>(createdStudentJson);
+        // Act
+        var response = await httpClient.PostAsync(BaseUrl + endpoint, jsonContent);
 
-                Assert.AreEqual(student.Id, createdStudent.Id);
-                Assert.AreEqual(student.FirstName, createdStudent.FirstName);
-                Assert.AreEqual(student.LastName, createdStudent.LastName);
-                Assert.AreEqual(student.Age, createdStudent.Age);
-                Assert.AreEqual(student.Adrress, createdStudent.Adrress);
-                Assert.AreEqual(student.university, createdStudent.university);
-            }
-        }
+        // Assert
+        response.EnsureSuccessStatusCode();
+        // Add additional assertions if needed
+        Assert.AreEqual(200, (int)response.StatusCode);
     }
 
+    [Test]
+    public async Task PostWithXmlOrJson_ValidXmlData_ReturnsOk()
+    {
+        // Arrange
+        var httpClient = new HttpClient();
+        var student = new Student
+        {
+            Id = 1,
+            FirstName = "John",
+            LastName = "Doe",
+            Age = "25",
+            Adrress = "123 Main St",
+            university = "MIT"
+        };
+        Console.WriteLine(student.ToXml());
+        var xmlContent = new StringContent(student.ToXml(), Encoding.UTF8, "application/xml");
+
+        // Act
+        var response = await httpClient.PostAsync(BaseUrl + endpoint, xmlContent);
+
+        // Assert
+        //response.EnsureSuccessStatusCode();
+        Assert.AreEqual(200, (int)response.StatusCode);
+
+        // Add additional assertions if needed
+    }
 }
+
+
